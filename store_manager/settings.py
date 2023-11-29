@@ -45,8 +45,6 @@ INSTALLED_APPS = [
 INSTALLED_APPS += CUSTOM_APP + EXTERNALS
 
 
-CUSTOM_MIDDLEWARE = ["store_app.cors.CorsMiddlewareMixin"]
-
 MIDDLEWARE = [
     "django.middleware.security.SecurityMiddleware",
     "django.contrib.sessions.middleware.SessionMiddleware",
@@ -55,9 +53,9 @@ MIDDLEWARE = [
     "django.contrib.auth.middleware.AuthenticationMiddleware",
     "django.contrib.messages.middleware.MessageMiddleware",
     "django.middleware.clickjacking.XFrameOptionsMiddleware",
+    "store_app.cors.CorsMiddlewareMixin"
 ]
 
-MIDDLEWARE += CUSTOM_MIDDLEWARE
 
 
 ROOT_URLCONF = "store_manager.urls"
