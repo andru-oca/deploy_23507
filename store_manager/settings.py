@@ -45,7 +45,7 @@ INSTALLED_APPS = [
 INSTALLED_APPS += CUSTOM_APP + EXTERNALS
 
 
-CUSTOM_MIDDLEWARE = ["app_store.cors.CorsMiddlewareMixin"]
+CUSTOM_MIDDLEWARE = ["store_app.cors.CorsMiddlewareMixin"]
 
 MIDDLEWARE = [
     "django.middleware.security.SecurityMiddleware",
