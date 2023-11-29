@@ -79,12 +79,25 @@ WSGI_APPLICATION = "store_manager.wsgi.application"
 # Database
 # https://docs.djangoproject.com/en/4.2/ref/settings/#databases
 
+# DATABASES = {
+#     "default": {
+#         "ENGINE": "django.db.backends.sqlite3",
+#         "NAME": BASE_DIR / "db.sqlite3",
+#     }
+# }
+
+
 DATABASES = {
-    "default": {
-        "ENGINE": "django.db.backends.sqlite3",
-        "NAME": BASE_DIR / "db.sqlite3",
-    }
+'default': {
+            'ENGINE': 'django.db.backends.mysql',
+            'NAME': 'anderson23507$store_manager',
+            'USER': 'anderson23507',
+            'PASSWORD': 'pirulo123',
+            'HOST': 'anderson23507.mysql.pythonanywhere-services.com',
+            'PORT': '3306',
+        }
 }
+
 
 
 # Password validation
