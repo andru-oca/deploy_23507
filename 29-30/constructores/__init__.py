@@ -1,1 +1,0 @@
-from .FutbolistaConstructor import ConstructorFutbolista
